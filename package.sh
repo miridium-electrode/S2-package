@@ -176,3 +176,50 @@ echo "apt-get install build-essential graphviz checkinstall" >> result.txt
 apt-get install build-essential graphviz checkinstall &>> result.txt
 echo >> result.txt
 echo >> result.txt
+
+echo "extract package" >> result.txt
+tar -xvjf pidgin-2.14.1.tar.bz2 >> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "configure" >> result.txt
+cd pidgin-2.14.1
+./configure --disable-plugins &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "build pidgin deb" >> result.txt
+apt-get build-deb pidgin &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "configure again" >> result.txt
+.configure --disable-plugins &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "make" >> result.txt
+make &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "make install" >> result.txt
+make install &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "extract lua" >> result.txt
+tar -xzvf lua-5.4.1.tar.gz >> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "make lua" >> result.txt
+cd lua-5.4.1
+make &>> result.txt
+echo >> result.txt
+echo >> result.txt
+
+echo "install lua" >> result.txt
+make install &>> result.txt
+echo >> result.txt
+echo >> result.txt

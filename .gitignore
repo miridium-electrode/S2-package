@@ -3,3 +3,7 @@
 *.tar.gz
 *.tar.bz
 *.zip
+*.tar.bz2
+wget-log
+pidgin*
+lua*
