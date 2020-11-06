@@ -81,12 +81,12 @@ echo >> result.txt
 echo >> result.txt
 
 echo "aptitude install vsftpd" >> result.txt 
-aptitude install vsftpd &>> result.txt
+aptitude install -y vsftpd &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
 echo "aptitude install ~nxvnc" >> result.txt
-aptitude install ~nxvnc &>> result.txt
+aptitude install -y ~nxvnc &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
@@ -101,7 +101,7 @@ echo >> result.txt
 echo >> result.txt
 
 echo "aptitude remove vsftpd" >> result.txt 
-aptitude remove vsftpd &>> result.txt
+aptitude remove -y vsftpd &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
@@ -158,7 +158,7 @@ echo >> result.txt
 echo >> result.txt
 
 echo "apt-get install apt-transport-https" >> result.txt
-apt-get install apt-transport-https &>> result.txt
+apt-get install -y apt-transport-https &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
@@ -168,12 +168,12 @@ echo >> result.txt
 echo >> result.txt
 
 echo "apt-get install opera-stable" >> result.txt
-apt-get install opera-stable &>> result.txt
+apt-get install -y opera-stable &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
 echo "apt-get install build-essential graphviz checkinstall" >> result.txt
-apt-get install build-essential graphviz checkinstall &>> result.txt
+apt-get install -y build-essential graphviz checkinstall &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
