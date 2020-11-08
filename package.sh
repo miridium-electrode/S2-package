@@ -131,18 +131,18 @@ echo >> result.txt
 echo >> result.txt
 
 echo "aptitude safe-upgrade" >> result.txt
-aptitude safe-upgrade &>> result.txt
+aptitude safe-upgrade -y &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
 echo "aptitude full-upgrade" >> result.txt
-aptitude full-upgrade &>> result.txt
+aptitude full-upgrade -y &>> result.txt
 echo >> result.txt
 echo >> result.txt
 
 echo "aptitude clean" >> result.txt
 ls -al /var/cache/apt/ archive >> result.txt
-aptitude  autoclean &>> result.txt
+aptitude  autoclean -y &>> result.txt
 ls -al /var/cache/apt/ archive >> result.txt
 echo >> result.txt
 echo >> result.txt
